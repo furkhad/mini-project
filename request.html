@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request disaster relief resources">
+    <meta name="keywords" content="disaster relief, request, aid">
+    <title>Request Resources</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Request Resources</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="request.html">Request Resources</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Submit a Request</h2>
+        <form id="request-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="resource">Resource Needed:</label>
+            <input type="text" id="resource" required>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" required>
+            <label for="location">Location:</label>
+            <input type="text" id="location" required>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <p id="form-message"></p>
+    </main>
+    <footer>
+        <p>© 2025 Disaster Relief System</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
