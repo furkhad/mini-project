@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View available disaster relief resources">
+    <meta name="keywords" content="disaster relief, resources, inventory">
+    <title>Resource Inventory</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Resource Inventory</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="request.html">Request Resources</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Available Resources</h2>
+        <input type="text" id="filter" placeholder="Filter by type or location">
+        <table id="resource-table">
+            <thead>
+                <tr>
+                    <th>Resource</th>
+                    <th>Quantity</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody id="resource-body"></tbody>
+        </table>
+    </main>
+    <footer>
+        <p |© 2025 Disaster Relief System</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
