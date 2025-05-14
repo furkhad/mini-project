@@ -2,174 +2,157 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
 }
+
 body {
     line-height: 1.6;
+    background: url('https://images.unsplash.com/photo-1615789591457-74a7c3847b5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
 }
+
 header {
-    background: #003087;
+    background: rgba(0, 48, 135, 0.9); /* Semi-transparent navy blue */
     color: white;
     text-align: center;
-    padding: 1em;
+    padding: 1.5em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+header h1 {
+    font-size: 2.2em;
+    margin-bottom: 0.5em;
+}
+
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 1em;
-    font-weight: bold;
+    margin: 0 1.2em;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
 }
+
 nav a:hover {
+    color: #ffd700; /* Gold hover effect */
     text-decoration: underline;
 }
+
 main {
     padding: 2em;
     max-width: 1200px;
     margin: 0 auto;
+    background: rgba(255, 255, 255, 0.85); /* Semi-transparent white for readability */
+    border-radius: 10px;
+    min-height: calc(100vh - 200px); /* Ensure main takes up space */
 }
+
+section {
+    padding: 1.5em;
+}
+
+h2 {
+    color: #003087;
+    margin-bottom: 1em;
+    font-size: 1.8em;
+}
+
+p {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+}
+
 .btn {
     display: inline-block;
-    padding: 0.5em 1em;
-    background: #d32f2f;
+    padding: 0.7em 1.5em;
+    background: #d32f2f; /* Red for urgency */
     color: white;
     text-decoration: none;
     border-radius: 5px;
     margin: 0.5em;
     border: none;
     cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.1s ease;
 }
+
 .btn:hover {
     background: #b71c1c;
+    transform: scale(1.05);
 }
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 1em 0;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 th, td {
     border: 1px solid #ddd;
-    padding: 0.5em;
+    padding: 0.8em;
     text-align: left;
 }
+
 th {
-    background: #f4f4f4;
-}
-input, button {
-    padding: 0.5em;
-    margin: 0.5em 0;
-    width: 100%;
-    max-width: 300px;
-}
-form label {
-    display: block;
-    margin: 0.5em 0 0.2em;
-}
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-@media (max-width: 600px) {
-    nav a {
-        display: block;
-        margin: 0.5em 0;
-    }
-    .btn {
-        display: block;
-        text-align: center;
-    }
-    table, th, td {
-        font-size: 0.9em;
-    }
-}* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-body {
-    line-height: 1.6;
-}
-header {
     background: #003087;
     color: white;
-    text-align: center;
-    padding: 1em;
 }
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 1em;
-    font-weight: bold;
+
+td {
+    background: #f9f9f9;
 }
-nav a:hover {
-    text-decoration: underline;
-}
-main {
-    padding: 2em;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.btn {
-    display: inline-block;
-    padding: 0.5em 1em;
-    background: #d32f2f;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 0.5em;
-    border: none;
-    cursor: pointer;
-}
-.btn:hover {
-    background: #b71c1c;
-}
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1em 0;
-}
-th, td {
-    border: 1px solid #ddd;
-    padding: 0.5em;
-    text-align: left;
-}
-th {
-    background: #f4f4f4;
-}
+
 input, button {
-    padding: 0.5em;
+    padding: 0.7em;
     margin: 0.5em 0;
     width: 100%;
     max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
+
 form label {
     display: block;
     margin: 0.5em 0 0.2em;
+    font-weight: bold;
 }
+
 footer {
     background: #333;
     color: white;
     text-align: center;
     padding: 1em;
+    width: 100%;
     position: fixed;
     bottom: 0;
-    width: 100%;
 }
+
 @media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
     nav a {
         display: block;
         margin: 0.5em 0;
     }
+
     .btn {
         display: block;
         text-align: center;
+        width: 100%;
+        max-width: 200px;
+        margin: 0.5em auto;
     }
+
     table, th, td {
         font-size: 0.9em;
+    }
+
+    main {
+        padding: 1em;
     }
 }
